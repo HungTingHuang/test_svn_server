@@ -2,4 +2,5 @@ should return msg
 should return msg
 former forget +x
 local log /tmp/xxx.log
+notgot but why? check script path
 
