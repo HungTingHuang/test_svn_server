@@ -20,4 +20,5 @@
 "REMOVE" = "Remove";
 "SELECT" = "Select";
 
+"TXT_IP_INVALID" = "IP address format is invalid.";
 
