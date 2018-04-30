@@ -1,59 +1,27 @@
-﻿/* Show how many ASUSTOR NAS have been found. */
-"ScannedServers" = " server(s) have been found.";
+﻿/* 
+  Localizable.strings
+  AiMusic
 
-/* No comment provided by engineer. */
-"Back" = "Back";
+  Created by asustor on 13/8/20.
+  Copyright (c) 2013ๅนด asustor. All rights reserved.
+*/
 
-/* No comment provided by engineer. */
-"Connecting" = "Connecting";
+// ==============================================================
+// String for Common
+// ==============================================================
 
-/* No comment provided by engineer. */
-"Done" = "Done";
+"OK" = "Ok";
+"CANCEL" = "Cancel";
+"LOADING" = "Loading";
+"CANCELING" = "Cancelling";
+"DONE" = "Done";
+"OVERWRITE" = "Overwrite";
+"RENAME" = "Rename";
+"REMOVE" = "Remove";
+"SELECT" = "Select";
 
-/* No comment provided by engineer. */
-"Exit" = "Exit";
 
-/* No comment provided by engineer. */
-"Keyboard" = "Keyboard";
 
-/* No comment provided by engineer. */
-"Last Page" = "Last Page";
-
-/* Hud Loading */
-"Loading" = "Loading";
-
-/* No comment provided by engineer. */
-"Next Page" = "Next Page";
-
-/* No comment provided by engineer. */
-"No Response." = "No Response.";
-
-/* No comment provided by engineer. */
-"ok" = "ok";
-
-/* No comment provided by engineer. */
-"Page Down" = "Page Down";
-
-/* No comment provided by engineer. */
-"Page Up" = "Page Up";
-
-/* No comment provided by engineer. */
-"Play Control" = "Play Control";
-
-/* No comment provided by engineer. */
-"Refresh" = "Refresh";
-
-/* No comment provided by engineer. */
-"Scanning" = "Scanning";
-
-/* No comment provided by engineer. */
-"Search" = "Search";
-
-/* No comment provided by engineer. */
-"Zoom In" = "Zoom In";
-
-/* No comment provided by engineer. */
-"Zoom Out" = "Zoom Out";
 
 "BTN_CONNECT_BY_MANUAL" = "Connect via IP";
 "TXT_IP_ADDRESS" = "IP Address";
