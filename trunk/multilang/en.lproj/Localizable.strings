@@ -1,277 +1,62 @@
-/* 
-  Localizable.strings
-  AiMusic
-
-  Created by asustor on 13/8/20.
-  Copyright (c) 2013年 asustor. All rights reserved.
-*/
-
-// ==============================================================
-// String for Common
-// ==============================================================
-
-"OK" = "Ok";
-"CANCEL" = "Cancel";
-"LOADING" = "Loading";
-"CANCELING" = "Cancelling";
-"DONE" = "Done";
-"OVERWRITE" = "Overwrite";
-"RENAME" = "Rename";
-"REMOVE" = "Remove";
-"SELECT" = "Select";
-
-"TXT_UPDATE_DB" = "Update database";
-
-// ==============================================================
-// String for Warn Message
-// ==============================================================
-
-"ERR_PLAYLIST_NAME_EXIST" = "Playlist name already exists.";
-"ERR_DOWNLOAD_PLAYLIST_EXIST" = "{0} already exists offline. What would you like to do?";
-"ERR_PLAYLIST_SONGS_NOT_EXIST" = "Can't find this song '{0}', would you like to remove it?";
-"ERR_PLAY_UNSUPPORTED_MUSIC_FORMAT" = "File format is not supported.";
-"ERR_DOWNLOAD_UNSUPPORTED_MUSIC_FORMAT" = "Download failed. Music format unsupported.";
-
-// ==============================================================
-// String for Cgi Warning Message
-// ==============================================================
-
-"ERR_CGI_ADD_TO_PLAYLIST_OVER_LIMIT" = "The maximum number of songs is {0} per playlist.";
-
-// ==============================================================
-// String for Info Message
-// ==============================================================
-
-"MSG_ADD_SONGS_AFTER_CURRENT_SONG" = "Added {0} songs to the playback queue. These songs will begin playing after the current song.";
-"MSG_ADD_SONGS_TO_PLAYBACK_QUEUE_FROM" = "Added {0} song(s) to playback queue from \"{1}\".";
-"MSG_ADD_SONGS_TO_PLAYBACK_QUEUE" = "Added {0} song(s) to playback queue.";
-"MSG_ADD_SONGS_TO_DOWNLOAD_TASK" = "Added {0} song(s) to Download Tasks.";
-"MSG_ADD_PLAYLISTS_TO_DOWNLOAD_TASK" = "Added {0} playlist(s) to Download Tasks.";
-"MSG_ADD_ITEM_TO_DOWNLOAD_TASK" = "Added \"{0}\" to Download Tasks.";
-"MSG_ADD_SONGS_TO_PLAYLIST" = "{0} song(s) have been added to {1}.";
-
-"MSG_REMOVE_THIS_PLAYLIST" = "Are you sure you want to remove this playlist?";
-
-// ==============================================================
-// String for User Guide
-// ==============================================================
-
-"TXT_USER_GUIDE_LOGIN_HELP" = "To use AiMusic, please press the button in the upper right-hand corner to connect to a NAS. Afterwards, you will be able to enjoy your music in Online Mode or download music to your device for offline listening.";
-"TXT_USER_GUIDE_SG_NOTE" = "Note: You must have the SoundsGood App installed on the NAS first.";
-
-// ==============================================================
-// String for Login NAS
-// ==============================================================
-
-"BTN_CONNECT_BY_CLOUD_ID" = "Connect via Cloud ID";
-"BTN_CONNECT_BY_MANUAL" = "Connect via IP/Hostname";
-"BTN_CONNECT_BY_AUTO_SCAN" = "Auto Discovery";
-"BTN_SIGN_IN" = "Sign in";
-"BTN_SAVE" = "Save";
-"TXT_HOST_IP" = "Host/IP";
-"TXT_USERNAME" = "Username";
-"TXT_PASSWORD" = "Password";
-"TXT_DESC" = "Description";
-"TXT_USE_HTTPS" = "HTTPS";
-"TXT_PORT" = "Port";
-
-// ==============================================================
-// String for Slide Menu
-// ==============================================================
-
-"TXT_SEARCH" = "Search";
-"TXT_MUSIC_MODE" = "Music";
-"TXT_TASK_LIST" = "Tasks";
-"TXT_SERVER_LIST" = "Server List";
-"TXT_LOCAL_DEVICE" = "Local Device";
-"TXT_SETTING" = "Setting";
-
-"TXT_MANAGE" = "Manage";
-// ==============================================================
-// String for Scan NAS
-// ==============================================================
-
-"TXT_NAS_FOUND" = "{0} server(s) has been found!!";
-
-// ==============================================================
-// String for Main View
-// ==============================================================
-
-"TXT_CATE_RATING" = "Rating";
-"TXT_CATE_RANDOM_SONGS" = "Random 100";
-"TXT_CATE_GENRE" = "Genre";
-"TXT_CATE_PLAYLIST" = "Playlist";
-"TXT_CATE_ARTIST" = "Artist";
-"TXT_CATE_ALBUM" = "Album";
-"TXT_CATE_RECENT" = "Recently Added";
-"TXT_CATE_RECENT_PLAYED" = "Recently Played";
-"TXT_CATE_POPULAR_PLAYED" = "Most played";
-"TXT_CATE_ALL_SONGS" = "All Songs";
-"TXT_CATE_FOLDER" = "Folder";
-"TXT_CATE_DOWNLOAD_JOB" = "Download Job";
-"TXT_CATE_SETTING" = "Settings";
-"TXT_CATE_SEARCH" = "Search";
-
-"TXT_PLAYLIST_FAVORITE" = "Favorite";
-// ==============================================================
-// String for Song View
-// ==============================================================
-
-"TXT_PLAY_ALL" = "Play All";
-"TXT_ADD_ALL" = "Add All";
-
-
-"TXT_SHUFFLE_PLAY" = "Shuffle";
-"TXT_ACTION_PLAY_ALL_NOW" = "Play All Now";
-
-"TXT_ACTION_PLAY_NOW" = "Play";
-"TXT_ACTION_NEXT" = "Play Next";
-"TXT_ACTION_ADD_TO_PLAY_QUEUE" = "Add to Queue";
-"TXT_ACTION_ADD_TO_PLAY_LIST" = "Save to Playlist";
-"TXT_ACTION_EDIT_PLAYLIST" = "Edit Playlist";
-"TXT_ACTION_DELETE" = "Delete";
-"TXT_ACTION_DELETE_FORM_PLAYLIST" = "Delete from playlist";
-"TXT_ACTION_RATING" = "Rating";
-
-"TXT_ACTION_DOWNLOAD" = "Download";
-"TXT_ACTION_SHARE" = "Share to";
-
-
-"TXT_LYRIC" = "Lyric";
-"TXT_NO_LYRIC" = "No lyrics yet.";
-"TXT_NO_ITEMS" = "No items";
-"TXT_NO_DATA" = "No data";
-
-"TXT_SELECT_ITEMS" = "Selected {0} item(s)";
-
-"TXT_TRACK" = "Track";
-// ==============================================================
-// String for Playback List View
-// ==============================================================
-
-"TXT_LOCAL_PLAY" = "Local Playback";
-"TXT_STREAMING" = "Stream";
-"TXT_OFFLINE" = "Offline";
-
-"TXT_PLAY_QUEUE" = "Playback Queue";
-
-"BTN_EDIT" = "Edit";
-"BTN_SAVE_TO_PLAYLIST" = "Save to Playlist";
-
-// ==============================================================
-// String for Playlist Selection View
-// ==============================================================
-
-"TXT_SONGS" = "{0} Songs";
-"TXT_SONG" = "{0} Song";
-"TXT_NEW_PLAYLIST" = "Create new Playlist";
-"TXT_EDIT_PLAYLIST" = "Edit Playlist";
-"TXT_NAME" = "Name";
-"TXT_PERMISSION" = "Permission";
-"TXT_PERMISSION_PUBLIC" = "Public";
-"TXT_PERMISSION_PRIVATE" = "Private";
-"TXT_PERMISSION_USER" = "ADM Account";
-
-"TXT_PLEASE_ENTER_THE_PLAYLIST" = "Please enter the playlist name";
-
-"MSG_CONTINUE_ADD_SONG_TO_PLAYLIST" = "Currently you can also add {0} song, Are you sure you want to continue?";
-"MSG_MAX_NUMBER_PLAYLIST_HAS_BEEN_REACHED" = "Max. number of playlist({0}) has been reached.";
-// ==============================================================
-// String for Download View
-// ==============================================================
-
-"TXT_TASK" = "Task {0}";
-"BTN_RETRY" = "Retry";
-"BTN_CANCEL_DOWNLOAD" = "Cancel Download";
-
-// ==============================================================
-// String for Search View
-// ==============================================================
-
-"TXT_RATING" = "{0} Rating";
-"TXT_STAR" = "{0} Star";
-"TXT_MUSIC_ALBUMS" = "{0} Albums";
-"TXT_MUSIC_ALBUM" = "{0} Album";
-"TXT_ARTISTS" = "{0} Artists";
-"TXT_ARTIST" = "{0} Artist";
-"TXT_GENRES" = "{0} Genres";
-"TXT_GENRE" = "{0} Genre";
-
-"TXT_SEARCH_SONG" = "Song";
-
-"TXT_SHOW_ALL" = "Show All";
-
-// ==============================================================
-// String for Setting View
-// ==============================================================
-
-"TXT_DOWNLOAD_LIMIT" = "Download Size Notification";
-"TXT_DOWNLOAD" = "Download";
-
-"TXT_MAX_SIZE" = "When Size Reaches (MB)";
-"TXT_USED_SIZE" = "Currently Used (MB)";
-"TXT_NO_LIMIT" = "No Limits";
-"TXT_SHAKE" = "Shake It";
-"TXT_SENSITIVITY" = "Sensitivity";
-
-"TXT_TIMER_OFF" = "Off";
-"TXT_TIMER" = "Timer";
-"TXT_TIMER_ENABLE" = "Use Timer";
-"TXT_TIMER_TIME" = "Stop After (Mins)";
-"TXT_INFO" = "Information";
-
-// ==============================================================
-// String for Instruction
-// ==============================================================
-
-"TXT_TOUR_WELCOME" = "Welcome to {0}!";
-"TXT_TOUR_WELCOME_DESC" = "AiMusic allows you to stream music from your NAS to your mobile device, letting you enjoy your entire music collection while on the go.";
-"TXT_TOUR_LOGIN" = "Login/Logout";
-"TXT_TOUR_LOGIN_DESC" = "Click {0} to enter the server management page. You will then be able to manage server lists and accounts.";
-"TXT_TOUR_BROWS_MUSIC" = "Browsing music";
-"TXT_TOUR_BROWS_MUSIC_DESC" = "You can browse songs stored on the NAS by name, album, artist, genre and folder.";
-"TXT_TOUR_SELECT_MODE" = "Select player";
-"TXT_TOUR_SELECT_MODE_DESC" = "After logging in, you can choose to stream music using your mobile device or control local playback from your NAS device.";
-"TXT_TOUR_QUICK_SWIPE" = "Play previous song/Next song";
-"TXT_TOUR_QUICK_SWIPE_DESC" = "Swipe to change between previous/next song.";
-
-"TXT_TOUR_READY_START" = "Let's get started now!";
-"TXT_TOUR_ADD_NAS" = "Add NAS";
-"TXT_TOUR_VIEW_LOCAL" = "Browse offline music";
-
-// ==============================================================
-// String for Player Setting View
-// ==============================================================
-
-"TXT_PLAYBACK_MODE_SETTING" = "Switch to playback mode settings";
-
-"TXT_PAUSE_PLAYBACK" = "Pause playback";
-"TXT_SHARE_PLAYBACK_QUEUE" = "Shared playback queue";
-
-"TXT_EXPLAIN_PAUSE_PLAYBACK" = "If you enable this item, after you change playback modes, the system will automatically pause playback for the original mode.";
-
-"TXT_EXPLAIN_SHARE_PLAYBACK_QUEUE" = "If you enable this item, after you change playback modes, the system will automatically copy and overwrite the items queued in the original playback mode to the queue of another playback mode.";
-
-
-"TXT_PLAYER_SETTING" = "Player Settings";
-"TXT_MOBILE_DEVICE_PLAYER" = "Mobile Device";
-"TXT_NAS_DEVICE_PLAYER" = "NAS Device";
-
-"TXT_MOBILE_DEVICE_LIST" = "ios device list";
-"TXT_NAS_DEVICE_LIST" = "nas device list";
-
-"TXT_AIRPLAY" = "Air Play";
-
-"ERR_CHANGE_PLAYBACK_DEVICE" = "Please first stop audio playback and then change the playback device.";
-
-
-"TXT_TOUR_PLAY_PRE_NEXT_SONG" = "Play previous song/Next song";
-"TXT_TOUR_SWIPE_TO_CHANGE_BETWEEN_PRE_NEXT_SONG" = "Swipe to change between previous/next song.";
-"TXT_TOUR_BROWSE_OFFLINE_MUSIC" = "Browse offline music";
-
-
-"TXT_FILE_DOWNLOAD_SETTING" = "Download Settings";
-"TXT_FILE_DOWNLOAD_SAMPLE_RATE" = "Sample rate";
-"TXT_SAMPLE_RATE_NORMAL" = "Default Quality (44.1 K)";
-"TXT_SAMPLE_RATE_ORIGINAL" = "Original Quality";
+﻿/* Show how many ASUSTOR NAS have been found. */
+"ScannedServers" = " server(s) have been found.";
+
+/* No comment provided by engineer. */
+"Back" = "Back";
+
+/* No comment provided by engineer. */
+"Connecting" = "Connecting";
+
+/* No comment provided by engineer. */
+"Done" = "Done";
+
+/* No comment provided by engineer. */
+"Exit" = "Exit";
+
+/* No comment provided by engineer. */
+"Keyboard" = "Keyboard";
+
+/* No comment provided by engineer. */
+"Last Page" = "Last Page";
+
+/* Hud Loading */
+"Loading" = "Loading";
+
+/* No comment provided by engineer. */
+"Next Page" = "Next Page";
+
+/* No comment provided by engineer. */
+"No Response." = "No Response.";
+
+/* No comment provided by engineer. */
+"ok" = "ok";
+
+/* No comment provided by engineer. */
+"Page Down" = "Page Down";
+
+/* No comment provided by engineer. */
+"Page Up" = "Page Up";
+
+/* No comment provided by engineer. */
+"Play Control" = "Play Control";
+
+/* No comment provided by engineer. */
+"Refresh" = "Refresh";
+
+/* No comment provided by engineer. */
+"Scanning" = "Scanning";
+
+/* No comment provided by engineer. */
+"Search" = "Search";
+
+/* No comment provided by engineer. */
+"Zoom In" = "Zoom In";
+
+/* No comment provided by engineer. */
+"Zoom Out" = "Zoom Out";
+
+"BTN_CONNECT_BY_MANUAL" = "Connect via IP";
+"TXT_IP_ADDRESS" = "IP Address";
+"TXT_IP_INVALID" = "IP address format is invalid.";
+
 
