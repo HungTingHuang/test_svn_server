@@ -1,26 +1,4 @@
-﻿/* 
-  Localizable.strings
-  AiMusic
-
-  Created by asustor on 13/8/20.
-  Copyright (c) 2013ๅนด asustor. All rights reserved.
-*/
-
-// ==============================================================
-// String for Common
-// ==============================================================
-
-"OK" = "Ok";
-"CANCEL" = "Cancel";
-"LOADING" = "Loading";
-"CANCELING" = "Cancelling";
-"DONE" = "Done";
-"OVERWRITE" = "Overwrite";
-"RENAME" = "Rename";
-"REMOVE" = "Remove";
-"SELECT" = "Select";
-
-/* Show how many ASUSTOR NAS have been found. */
+﻿/* Show how many ASUSTOR NAS have been found. */
 "ScannedServers" = " server(s) have been found.";
 
 /* No comment provided by engineer. */
