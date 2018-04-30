@@ -55,5 +55,8 @@
 /* No comment provided by engineer. */
 "Zoom Out" = "Zoom Out";
 
+"BTN_CONNECT_BY_MANUAL" = "Connect via IP";
+"TXT_IP_ADDRESS" = "IP Address";
+"TXT_IP_INVALID" = "IP address format is invalid.";
 
 
