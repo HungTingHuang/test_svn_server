@@ -5,6 +5,5 @@
     <!-- Common -->
     <sys:String x:Key="str_map_acct_chk_change">Disconnect the current account and connect with: {0}</sys:String>
     <sys:String x:Key="afx_str_app_title">Backup Plan</sys:String>
-    <sys:String x:Key="str_app_title">Backup 
-	Plan</sys:String>
+    <sys:String x:Key="str_app_title">Backup Plan</sys:String>
 </ResourceDictionary>
