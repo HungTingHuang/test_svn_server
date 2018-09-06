@@ -278,7 +278,7 @@
     <sys:String x:Key="str_map_acct_chk_desc">You have already connected to the server [{0}] with another account.Please select the account that you wish to connect with.</sys:String>
     <sys:String x:Key="str_map_acct_chk_keep">Use current account: {0}</sys:String>
     <sys:String x:Key="str_map_acct_chk_change">Disconnect the current account and connect with: {0}</sys:String>
-    <sys:String x:Key="afx_str_app_title">Backup 
+    <sys:String x:Key="afx_str_app_title">Backup Plan</sys:String>
+    <sys:String x:Key="str_app_title">Backup 
 	Plan</sys:String>
-    <sys:String x:Key="str_app_title">Backup Plan</sys:String>
 </ResourceDictionary>
