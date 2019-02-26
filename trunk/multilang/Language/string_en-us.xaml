@@ -1,8 +1,355 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:sys="clr-namespace:System;assembly=mscorlib">
-<sys:String x:Key="str_add_connection_success" xml:space="preserve">Setup was successful!To add additional NAS, please press Add.</sys:String>
+    <!-- Common -->
+    <sys:String x:Key="str_ok">OK</sys:String>
+    <sys:String x:Key="str_cancel">Cancel</sys:String>
+    <sys:String x:Key="str_yes">Yes</sys:String>
+    <sys:String x:Key="str_no">No</sys:String>
+    <sys:String x:Key="str_next">Next</sys:String>
+    <sys:String x:Key="str_previous">Previous</sys:String>
+    <sys:String x:Key="str_finish">Finish</sys:String>
+    <sys:String x:Key="str_close">Close</sys:String>
+    <sys:String x:Key="str_wait">Processing...</sys:String>
+    <sys:String x:Key="str_error">Error</sys:String>
+    <sys:String x:Key="str_add">Add</sys:String>
+    <sys:String x:Key="str_apply">Apply</sys:String>
+
+    <!-- System Menu -->
+    <sys:String x:Key="str_sysmenu_update">Check for updates</sys:String>
+    <sys:String x:Key="str_sysmenu_about">About AES</sys:String>
+    <sys:String x:Key="str_about_version">Version</sys:String>
+    <sys:String x:Key="str_setting_lang">Language</sys:String>
+
+    <!--WinTray-->
+    <sys:String x:Key="str_wintray_run_background_tip">EZ Connect is running in the background</sys:String>
+    <sys:String x:Key="str_wintray_reconnect_fail_tip">The following items have failed to connect/mount</sys:String>
+    <sys:String x:Key="str_wintray_status_connecting">Connecting to NAS</sys:String>
+    <sys:String x:Key="str_exit">Exit EZ Sync</sys:String>
+    <sys:String x:Key="str_send_feedback">Feedback</sys:String>
+    <sys:String x:Key="str_warr_has_connection_not_stop">There are currently items in use. Are you sure you wish to exit this program?</sys:String>
+    <sys:String x:Key="str_wintray_open_aes_tip">Open AES</sys:String>
+    <sys:String x:Key="str_wintray_open_pc_path_tip">Open PC path</sys:String>
+    <sys:String x:Key="str_wintray_open_web_adm_tip">Open web ADM</sys:String>
+    <sys:String x:Key="str_wintray_more_tip">More</sys:String>
+    
+    <!-- Main Button -->
+    <sys:String x:Key="str_add_connect">Add</sys:String>
+    <sys:String x:Key="str_add_folder">Add task</sys:String>
+    <sys:String x:Key="str_edit">Edit</sys:String>
+    <sys:String x:Key="str_pause">Pause</sys:String>
+    <sys:String x:Key="str_resume">Resume</sys:String>
+    <sys:String x:Key="str_open">Open</sys:String>
+    <sys:String x:Key="str_remove">Remove</sys:String>
+    <sys:String x:Key="str_log">Log</sys:String>
+    <sys:String x:Key="str_preference">Preference</sys:String>
+
+    <!--Main UI-->
+    <sys:String x:Key="str_conn_used_size">Used</sys:String>
+    <sys:String x:Key="str_conn_free_size">Free</sys:String>
+    <sys:String x:Key="str_main_tabheader_sync_status">Sync status</sys:String>
+    <sys:String x:Key="str_main_tabheader_task_list">Task list</sys:String>
+    <sys:String x:Key="str_conn_status_connecting">Connecting</sys:String>
+    <sys:String x:Key="str_conn_status_file_queue_count">Currently syncing {0} files.</sys:String>
+    <sys:String x:Key="str_conn_status_completed">Complete</sys:String>
+    <sys:String x:Key="str_sync_status_syncing">Syncing</sys:String>
+    <sys:String x:Key="str_sync_status_scanning">File scanning...</sys:String>
+
+    <sys:String x:Key="str_nas_information">Nas Information</sys:String>
+    <sys:String x:Key="str_nas_information_name">Nas name:</sys:String>
+    <sys:String x:Key="str_nas_information_username">Username:</sys:String>
+    <sys:String x:Key="str_nas_information_total_capacity">Total capacity:</sys:String>
+
+    <sys:String x:Key="str_conn_status_error1">Some files failed to sync.</sys:String>
+    <sys:String x:Key="str_conn_status_error2">Click here</sys:String>
+    <sys:String x:Key="str_conn_status_error3">to view the file list.</sys:String>
+    
+    <!--Task List-->
+    <sys:String x:Key="str_task_list_open_pc">Open PC</sys:String>
+    <sys:String x:Key="str_task_list_open_nas">Open NAS</sys:String>
+    <sys:String x:Key="str_task_list_sync_direction">Sync direction</sys:String>
+    <sys:String x:Key="str_task_list_sync_complete">Sync complete</sys:String>
+    <sys:String x:Key="str_task_list_sync_not_connected">Not currently connected</sys:String>
+    <sys:String x:Key="str_task_list_sync_error">Error</sys:String>
+    <sys:String x:Key="str_task_list_status">Status</sys:String>
+
+    <!-- Wizard Page-->
+    <sys:String x:Key="str_wizard_add_connect_title">Add Connection</sys:String>
+    <sys:String x:Key="str_wizard_add_connect_fill_out_info">Please fill out the following:</sys:String>
+    <sys:String x:Key="str_wizard_login_site">Host IP or Cloud ID</sys:String>
+    <sys:String x:Key="str_wizard_login_usr">Username</sys:String>
+    <sys:String x:Key="str_wizard_login_pw">Password</sys:String>
+    <sys:String x:Key="str_btn_scan_nas">Select NAS</sys:String>
+    <sys:String x:Key="str_wizard_login_tip" xml:space="preserve">• If your NAS is connected to the same network, the IP address may be entered. Ex: 172.16.1.18&#x0a;&#x0a;• If your NAS is not on the local network and EZ Connect is enabled, the Cloud ID can be inputted. EZ Connect settings are located by clicking on EZ Connect within Settings.&#x0a;&#x0a;• If the port number has changed, please append the port number to the URL or IP address. Ex: 8000</sys:String>
+    <sys:String x:Key="str_wizard_use_https">Using safer connection (HTTPS connection)</sys:String>
+    <sys:String x:Key="str_wizard_login_error">Authentication failed.  Please check the password again.</sys:String>
+    <sys:String x:Key="str_adm_not_compatible">The ADM firmware version is not compatible with this App. Please update ADM to its latest version.</sys:String>
+
+    <sys:String x:Key="str_information">Information</sys:String>
+    <sys:String x:Key="str_cloud_id_is_enable">EZ Connect has been enabled, files can now be synchronised from anywhere with an internet connection.</sys:String>
+    <sys:String x:Key="str_cloud_id_is_not_enable" xml:space="preserve">EZ Connect is not currently enabled. It is suggested that you enable EZ-Connect to allow the app to synchronize anywhere with an internet connection.</sys:String>
+    <sys:String x:Key="str_cloud_id_is_not_enable_note">(If you are the system administrator, you can go to ADM > [{0}] > [{1} enable EZ-Connect )</sys:String>
+    <sys:String x:Key="str_can_not_enable_p2p">Can not enable P2P service.</sys:String>
+    <sys:String x:Key="str_enable_now">Enable now</sys:String>
+    <sys:String x:Key="str_enable_later">Remind me later</sys:String>
+
+    <sys:String x:Key="str_wizard_select_setup_type">Select one below</sys:String>
+    <sys:String x:Key="str_wizard_quick_setup">Quick setup</sys:String>
+    <sys:String x:Key="str_wizard_quick_setup_desc">Create tasks quickly with just one step.</sys:String>
+    <sys:String x:Key="str_wizard_full_setup">Advanced Setup</sys:String>
+    <sys:String x:Key="str_wizard_full_setup_desc">Folders and synchronization settings can be customized here.</sys:String>
+
+    <sys:String x:Key="str_wizard_select_root_folder">Please select a local sync folder and an EZ Sync server folder.</sys:String>
+    <sys:String x:Key="str_wizard_browse">Browse</sys:String>
+    <sys:String x:Key="str_wizard_cannot_select_the_folder">This folder is syncing with a NAS, please select other folder.</sys:String>
+    <sys:String x:Key="str_wizard_cannot_select_the_folder2">This folder is syncing with a PC, please select other folder.</sys:String>
+    <sys:String x:Key="str_wizard_cannot_select_sys_folder" xml:space="preserve">You can't select Windows system folder:&#x0a;Program Files, Program Files(x86), Windows.</sys:String>
+    <sys:String x:Key="str_wizard_select_nas_root_folder_tip">If you select EZ Sync as starting point, you will not be able to create other tasks.</sys:String>
+    <sys:String x:Key="str_wizard_folder_tree_root_files">Files not in a folder.</sys:String>
+    <sys:String x:Key="str_wizard_folder_tree_file_in">Files in</sys:String>
+    
+    <sys:String x:Key="str_wizard_local_folder_path">PC Path</sys:String>
+    <sys:String x:Key="str_wizard_server_folder_path">NAS Path</sys:String>
+    <sys:String x:Key="str_wizard_select_detail">Select detail files and folders</sys:String>
+    <sys:String x:Key="str_wizard_pc_folder">PC Folder</sys:String>
+    <sys:String x:Key="str_wizard_nas_folder">NAS Folder</sys:String>
+    <sys:String x:Key="str_wizard_sync_folder">Sync Folder</sys:String>
+    <sys:String x:Key="str_wizard_sync_setting">Synchronization Settings</sys:String>
+    <sys:String x:Key="str_wizard_delete_file_setting">When files are deleted on the source, also delete the corresponding files at the destination</sys:String>
+    <sys:String x:Key="str_wizard_sync_two_way">Synchronization (2-way)</sys:String>
+    <sys:String x:Key="str_wizard_sync_pc2nas">PC to NAS (one-way)</sys:String>
+    <sys:String x:Key="str_wizard_sync_nas2pc">NAS to PC (one-way)</sys:String>
+    <sys:String x:Key="str_wizard_please_select_folder">Please select a folder</sys:String>
+    <sys:String x:Key="str_wizard_select_server_folder">NAS Path</sys:String>
+    <sys:String x:Key="str_wizard_make_new_folder">Make New Folder</sys:String>
+    <sys:String x:Key="str_wizard_select_server_folder_desc">Please select starting point.</sys:String>
+    <sys:String x:Key="str_wizard_select_folder_not_exist">The folder you selected does not exist.Do you want to create?</sys:String>
+    <sys:String x:Key="str_can_not_create_folder">Could not create folder.</sys:String>
+    <sys:String x:Key="str_can_not_select_sys_folder">One or more Windows system folders have been selected. EZ Sync is unable to synchronize system folders. Please unselect these.</sys:String>
+    <sys:String x:Key="str_not_del_on_nas">Delete PC files without deleting those files on NAS.</sys:String>
+    <sys:String x:Key="str_not_del_on_pc">Delete NAS files without deleting those files on PC.</sys:String>
+    
+
+    <sys:String x:Key="str_wizard_uncheck_folder_desc">Select the folder(s) which will be synced</sys:String>
+    <sys:String x:Key="str_wizard_sync_new_folder">Sync contains files and folders added later</sys:String>
+
+    <sys:String x:Key="str_wizard_file_exclusions">Filter exclusions:</sys:String>
+    <sys:String x:Key="str_wizard_file_exclusions_desc">Here you can set filtering rules. A file will not be synchronized if it meets any of the conditions configured below.</sys:String>
+    <sys:String x:Key="str_wizard_filter_file_size">File size exceeds (MB):</sys:String>
+    <sys:String x:Key="str_wizard_filter">Filter</sys:String>
+    <sys:String x:Key="str_wizard_filter_add_rule">Add Filter rule</sys:String>
+
+    <sys:String x:Key="str_mfa_list_filter">File Type</sys:String>
+    <sys:String x:Key="str_mfa_list_doc">Documents</sys:String>
+    <sys:String x:Key="str_mfa_list_vdo">Video</sys:String>
+    <sys:String x:Key="str_mfa_list_music">Music</sys:String>
+    <sys:String x:Key="str_mfa_list_photo">Pictures</sys:String>
+    <sys:String x:Key="str_mfa_list_app">Applications</sys:String>
+    <sys:String x:Key="str_mfa_list_temp">Temporary files</sys:String>
+    <sys:String x:Key="str_mfa_list_exten">File Extension</sys:String>
+    <sys:String x:Key="str_custom_filter">Customization</sys:String>
+    <sys:String x:Key="str_staw_txt_inc_tipmsg" xml:space="preserve">Tips:&#x0a;1. Entering *.abc will cause all files with the file extension abc to be included.&#x0a;2. Entering abc.* will cause all files named abc to be included.&#x0a;3. Entering *abc* will cause all files with names containing abc to be included.&#x0a;4. You can use a comma to add multiple filters. e.g., *.abc,*.doc,temp.*</sys:String>
+    <sys:String x:Key="str_staw_txt_exc_tipmsg" xml:space="preserve">Tips:&#x0a;1. Entering *.abc will cause all files with the file extension abc to be excluded.&#x0a;2. Entering abc.* will cause all files named abc to be excluded.&#x0a;3. Entering *abc* will cause all files with names containing abc to be excluded.&#x0a;4. You can use a comma to add multiple filters. e.g., *.abc,*.doc,temp.*</sys:String>
+    <!--Scan Nas-->
+    <sys:String x:Key="str_scan_nas">Select NAS</sys:String>
+    <sys:String x:Key="str_select_nas">Select NAS</sys:String>
+    <sys:String x:Key="str_select_nas_desc">Please select a NAS</sys:String>
+    <sys:String x:Key="str_bwna_btn_rescan">Rescan</sys:String>
+    <sys:String x:Key="str_name">Name</sys:String>
+    <sys:String x:Key="str_title_ip">IP Address</sys:String>
+    <!--Two step auth-->
+    <sys:String x:Key="str_two_step_code_input">Please enter the verification code</sys:String>
+    <sys:String x:Key="str_two_step_code_six">Please enter the 6-digit verification code</sys:String>
+    <sys:String x:Key="str_two_step_code_error">Password is incorrect. Please try again.</sys:String>
+    <sys:String x:Key="str_two_step_problem_login">Problems logging in?</sys:String>
+    <sys:String x:Key="str_two_step_click_here">Click here!</sys:String>
+    
+    <!--Share Link-->
+    <sys:String x:Key="str_share_link_create">Create Share Link</sys:String>
+    <sys:String x:Key="str_share_link_desc">Create Share Link</sys:String>
+    <sys:String x:Key="str_share_link_share_to">Share to</sys:String>
+    <sys:String x:Key="str_internet">Internet</sys:String>
+    <sys:String x:Key="str_local_network">Local Network</sys:String>
+    <sys:String x:Key="str_expiration_date">Expiration Date</sys:String>
+    <sys:String x:Key="str_date">Date</sys:String>
+    <sys:String x:Key="str_timer">Timer</sys:String>
+    <sys:String x:Key="str_forever">Forever</sys:String>
+    <sys:String x:Key="str_link_expiration">Link Expiration</sys:String>
+    <sys:String x:Key="str_day">day</sys:String>
+    <sys:String x:Key="str_hour">hour</sys:String>
+    <sys:String x:Key="str_require_password">Require password</sys:String>
+    <sys:String x:Key="str_share_as">Share as</sys:String>
+    <sys:String x:Key="str_single_share_link">Single share link</sys:String>
+    <sys:String x:Key="str_separate_share_links">Separate Share Links</sys:String>
+    <sys:String x:Key="str_share_link_tip">Tip: You can manage all Share Links by clicking on Sharing Management within EZ Sync and Share Link Manager within File Explorer.</sys:String>
+    <sys:String x:Key="str_mail">Mail</sys:String>
+    <sys:String x:Key="str_copy_link_to_clipboard">Link has been copied to clipboard.</sys:String>
+    
+
+    <!--Tray Window-->
+    <sys:String x:Key="str_stop_sync">Pause</sys:String>
+    <sys:String x:Key="str_restart_sync">Resume</sys:String>
+    <sys:String x:Key="str_syncing">Synchronizing</sys:String>
+    <sys:String x:Key="str_already_newest">Up to date</sys:String>
+    <sys:String x:Key="str_remaining_time">Remain time：</sys:String>
+    <sys:String x:Key="str_notification">Notification</sys:String>
+    <sys:String x:Key="str_recent_file">Recently</sys:String>
+    <sys:String x:Key="str_file_count">items</sys:String>
+    
+    <sys:String x:Key="str_update_time_just">Just now</sys:String>
+    <sys:String x:Key="str_update_time_sec">Updated {0} second(s) ago</sys:String>
+    <sys:String x:Key="str_update_time_min">Updated {0} minute(s) ago</sys:String>
+    <sys:String x:Key="str_update_time_hour">Updated {0} hour(s) ago</sys:String>
+    <sys:String x:Key="str_update_time_day">Updated {0} day(s) ago</sys:String>
+    <sys:String x:Key="str_update_time_month">Updated {0} month(s) ago</sys:String>
+    <sys:String x:Key="str_update_time_deleted">deleted</sys:String>
+
+    <sys:String x:Key="str_minute">minute</sys:String>
+    <sys:String x:Key="str_second">second</sys:String>
+
+    <sys:String x:Key="str_notification_not_found_nas_folder">NAS folder [{0}] could not be found. Please check to see if [{0}] was deleted, moved, or is otherwise inaccessible.</sys:String>
+    <sys:String x:Key="str_notification_not_found_local_folder">Local folder {0} could not be found.  Please check to see if {0} was deleted, moved, or is otherwise inaccessible.</sys:String>
+    <sys:String x:Key="str_notification_volume_moving">Sync paused, EZ Sync storage is moving from Volume {0} to Volume {1}</sys:String>
+    <sys:String x:Key="str_notification_unlinked">Unlinked by [{0}]. Synchronization cannot continue. EZ Sync needs to reconnect and log in to continue synchronizing.</sys:String>
+    
+    <!--Edit-->
+    <sys:String x:Key="str_edit_nas">Edit</sys:String>
+    <sys:String x:Key="str_edit_general">General</sys:String>
+    <sys:String x:Key="str_edit_ip_cloud">Host IP or Cloud ID</sys:String>
+    <sys:String x:Key="str_edit_bandwidth">Bandwidth</sys:String>
+    <sys:String x:Key="str_edit_bandwidth_group_title">Bandwidth Limitation</sys:String>
+    <sys:String x:Key="str_edit_bandwidth_upload">Limited maximum upload speed (KB/s)</sys:String>
+    <sys:String x:Key="str_edit_bandwidth_download">Limited maximum download speed (KB/s)</sys:String>
+    <sys:String x:Key="str_edit_bandwidth_note">Note:</sys:String>
+    <sys:String x:Key="str_edit_bandwidth_note_unlimited">0: unlimited</sys:String>
+    <sys:String x:Key="str_edit_folder_settings">Folder settings</sys:String>
+    <sys:String x:Key="str_edit_filter">Filter</sys:String>
+    <sys:String x:Key="str_edit_connect_before_edit">Please connect to NAS before editing</sys:String>
+    
+    
+    
+    <!--Log-->
+    <sys:String x:Key="str_log_title">Log</sys:String>
+    <sys:String x:Key="str_log_file_name">File Name</sys:String>
+    <sys:String x:Key="str_log_action_type">Event</sys:String>
+    <sys:String x:Key="str_log_local_path">Path</sys:String>
+    <sys:String x:Key="str_log_file_type">File/Folder</sys:String>
+    <sys:String x:Key="str_file">File</sys:String>
+    <sys:String x:Key="str_folder">Folder</sys:String>
+    <sys:String x:Key="str_log_finish_time">Time</sys:String>
+    <sys:String x:Key="str_log_export">Export</sys:String>
+    <sys:String x:Key="str_log_clear">Clear</sys:String>
+    <sys:String x:Key="str_log_page">Page</sys:String>
+    <sys:String x:Key="str_log_search">Search</sys:String>
+    <sys:String x:Key="str_log_upload">Upload</sys:String>
+    <sys:String x:Key="str_log_download">Download</sys:String>
+    <sys:String x:Key="str_log_delete">Delete</sys:String>
+    <sys:String x:Key="str_log_rename">Rename</sys:String>
+    <sys:String x:Key="str_log_move">Move</sys:String>
+    <sys:String x:Key="str_log_copy">Copy</sys:String>
+    <sys:String x:Key="str_log_displaying">Displaying</sys:String>
+    
+    <!--Shell Menu-->
+    <sys:String x:Key="str_shell_menu_ezsync_root_menu">EZ Sync Menu</sys:String>
+    <sys:String x:Key="str_shell_menu_create_share_link">Create Share Link</sys:String>
+    <sys:String x:Key="str_shell_menu_version_control">File History</sys:String>
+    
+    
+    <sys:String x:Key="str_aes_title">AES (ASUSTOR EZ Sync)</sys:String>
+
+
+    <!--Unregister DLL-->
+    <sys:String x:Key="str_warn_uninstall">Uninstall EZ Sync</sys:String>
+    <sys:String x:Key="str_warn_restart_explorer">You will need to restart Windows Explorer. Do you want to restart Windows Explorer now?</sys:String>
+    <sys:String x:Key="str_error_cannt_uninstall_icon_overlay_handler">Can not uninstall IconOverlayHandler.</sys:String>
+
+
+    
+
+    <sys:String x:Key="str_err_canot_get_orbweb_sid">Authentication failed. Either the Cloud ID does not exist or the EZ-Connect function has not been enabled.</sys:String>
+    <sys:String x:Key="str_err_service_busy">Service busy. Please try again later.</sys:String>
+    <sys:String x:Key="str_err_sync_file_fail">Synchronization failed.</sys:String>
+
+    <!--Connect error-->
+    <sys:String x:Key="str_err_unknown">Unknown error.</sys:String>
+    <sys:String x:Key="str_err_config_param_incorrect">Configuration parameter is incorrect.</sys:String>
+    <sys:String x:Key="str_err_host_not_regsitered">Cannot connect to server. To resolve this issue, try one or more of the following methods: (1) Please check NAS has completed boot up and network connection is ready. (2) Please wait and try again later.</sys:String>
+    <sys:String x:Key="str_err_server_exception">Server side exception. Please contact our technical support for further assistance.</sys:String>
+    <sys:String x:Key="str_err_config_file_error">Configuration file error. Please contact our technical support for further assistance.</sys:String>
+    <sys:String x:Key="str_err_connect_host_timeout">Session timeout. Please return to the previous step and try again.</sys:String>
+    <sys:String x:Key="str_err_sid_not_regsiter">Connection was lost or disconnected. Please return to the previous step and try again.</sys:String>
+    <sys:String x:Key="str_err_local_port_used">The specified port number is already being used by another service.</sys:String>
+    <sys:String x:Key="str_err_ip_blocked">Login failed. The IP of the current computer has been blocked.</sys:String>
+    <sys:String x:Key="str_err_timestamp_expire">Authentication failed. Please ensure that the time on your NAS is synced with the NTP server.</sys:String>
+    <sys:String x:Key="str_err_reg_port_no_response">System is busy. Please try again later.</sys:String>
+
+    <!--Welcome UI-->
+    <sys:String x:Key="str_welcome_title">Welcome!</sys:String>
+    <sys:String x:Key="str_welcome_desc">ASUSTOR EZ Sync allows you to easily connect to your NAS and sync files between a computer and a NAS from anywhere and at any time with an internet connection.</sys:String>
+    <sys:String x:Key="str_welcome_btn">Start</sys:String>
+
+    <!--Information UI-->
+    <sys:String x:Key="str_info_in_latest_status">You are in the latest status.</sys:String>
+    <sys:String x:Key="str_info_syncing_files">Syncing files</sys:String>
+    <sys:String x:Key="str_info_connecting_to_nas">You are connecting to your  NAS</sys:String>
+    <sys:String x:Key="str_info_lang_settings">Language and startup settings</sys:String>
+    <sys:String x:Key="str_info_add_task">Add task</sys:String>
+    <sys:String x:Key="str_info_edit_task">Edit task</sys:String>
+    <sys:String x:Key="str_info_del_task">Delete task</sys:String>
+    <sys:String x:Key="str_info_open_nas">Open NAS path</sys:String>
+    <sys:String x:Key="str_info_widget">Widget</sys:String>
+
+    <!--Dialogs-->
+    <sys:String x:Key="str_cloudid">Cloud ID</sys:String>
+    <sys:String x:Key="str_desc">Description</sys:String>
+    <sys:String x:Key="str_usr_name">User Name</sys:String>
+    <sys:String x:Key="str_pw">Password</sys:String>
+    <sys:String x:Key="str_remember_pw_changed">Once you disable the [{0}] setting, the auto-mount function will be disabled for the following drives:</sys:String>
+    <sys:String x:Key="str_do_continue">Are you sure you wish to continue?</sys:String>
+    <sys:String x:Key="str_warn_change_pw">After changing the password, currently connected items will be disconnected and then reconnected.</sys:String>
+    <sys:String x:Key="str_tip_remember_pw">You must first fill out the password field before configuring this option.</sys:String>
+    <sys:String x:Key="str_setting">Settings</sys:String>
+    <sys:String x:Key="str_setting_auto_start">Start ASUSTOR EZ Sync on system startup</sys:String>
+    <sys:String x:Key="str_ask_password">Please enter the password.</sys:String>
+    <sys:String x:Key="str_ask_password_incorrect">Password is incorrect</sys:String>
+    <sys:String x:Key="str_ask_reconnect">All existing connections will be interrupted. Are you sure?</sys:String>
+    <sys:String x:Key="str_ask_abort">Are you sure you want to disconnect the selected connection?</sys:String>
+    <sys:String x:Key="str_add_connection_success" xml:space="preserve">Setup was successful!&#x0a;To add additional NAS, please press Add.</sys:String>
+
+    <sys:String x:Key="str_ver_ctrl_dlg_title">File History -</sys:String>
+    <sys:String x:Key="str_ver_ctrl_download">Download</sys:String>
+    <sys:String x:Key="str_ver_ctrl_ver_number">Version</sys:String>
+    <sys:String x:Key="str_ver_ctrl_modified_time">Last Modified</sys:String>
+    <sys:String x:Key="str_ver_ctrl_created_time">Created</sys:String>
+    <sys:String x:Key="str_ver_ctrl_client_name">Device</sys:String>
+
+    <sys:String x:Key="str_fail_file_list_title">File List</sys:String>
+    <sys:String x:Key="str_fail_file_list_size">Size</sys:String>
+
+    <sys:String x:Key="str_update_pw">Update password</sys:String>
+    
+    <sys:String x:Key="str_remove_single_warning">Are you sure you wish to remove the selected item ?</sys:String>
+    <sys:String x:Key="str_remove_all_item">Are you sure you wish to remove all items?</sys:String>
+    <sys:String x:Key="str_remove_drive_on_maping">This item is currently mounting. Are you sure you wish remove it?</sys:String>
+    <sys:String x:Key="str_remove_multi_warning">After removing this option, all mounted items will be removed as well.</sys:String>
+
+    <!--Port information dialog-->
+    <sys:String x:Key="str_port_info_desc">You will be able to use the Windows ports in the list to access corresponding NAS services.</sys:String>
+    <sys:String x:Key="str_port_info_note">Note: You can go to [ADM] > [{0}] > [{1}] > [{2}] to enable port forwarding for this service. New port forwarding configurations will be applied the next time you reconnect.</sys:String>
+    <sys:String x:Key="str_service_name">Service Name</sys:String>
+    <sys:String x:Key="str_nas_port">NAS Port</sys:String>
+    <sys:String x:Key="str_windows_port">Windows Port</sys:String>
+    <sys:String x:Key="str_service_status">NAS Service Status</sys:String>
+    <sys:String x:Key="str_enabled">Enabled</sys:String>
+    <sys:String x:Key="str_disabled">Disabled</sys:String>
+    <sys:String x:Key="str_instructions">Instructions</sys:String>
+
+    <sys:String x:Key="str_servies">Services</sys:String>
+    <sys:String x:Key="str_sftp_service">SFTP Service</sys:String>
+    <sys:String x:Key="str_ezconnect">EZ-Connect</sys:String>
+    <sys:String x:Key="str_advanced_setup">Advanced Settings</sys:String>
     
 </ResourceDictionary>
+
 
 
