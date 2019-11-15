@@ -7,6 +7,7 @@ static void functionA()
 static void functionB()
 {
 	// do something for issue 32005
+	// do more for 32005
 }
 
 int main()
