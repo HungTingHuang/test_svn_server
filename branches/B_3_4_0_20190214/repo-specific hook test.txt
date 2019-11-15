@@ -1,0 +1,8 @@
+should return msg
+should return msg
+former forget +x
+local log /tmp/xxx.log
+notgot but why? check script path
+REPOS is the full path not only repo name
+Put i don't know if it works enable local logs
+

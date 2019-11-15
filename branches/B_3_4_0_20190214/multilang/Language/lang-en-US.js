@@ -1,0 +1,15 @@
+_AS_STRINGS = {};
+
+_AS_STRINGS.LOGIN = {};
+_AS_STRINGS.LOGIN.SUNDAY = 'Sunday';
+_AS_STRINGS.LOGIN.MONDAY = 'Monday';
+_AS_STRINGS.LOGIN.TUESDAY = 'Tuesday';
+_AS_STRINGS.LOGIN.WEDNESDAY = 'Wednesday';
+_AS_STRINGS.LOGIN.THURSDAY = 'Thur
+
+sday';
+_AS_STRINGS.LOGIN.FRIDAY = 'Friday';
+_AS_STRINGS.LOGIN.SATURDAY = 'Saturday';
+
+_AS_STRINGS.LOGIN_INFO = {};
+_AS_STRINGS.LOGIN_INFO.SESSION_TIMEOUT = 'Your session has expired, please login again.';
