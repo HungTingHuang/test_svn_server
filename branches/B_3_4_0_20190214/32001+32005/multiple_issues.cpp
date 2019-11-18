@@ -1,7 +1,6 @@
 static void functionA()
 {
 	// do something for issue 32001
-	// do more for 32001
 }
 
 static void functionB()
