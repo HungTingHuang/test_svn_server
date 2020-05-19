@@ -1,0 +1,9 @@
+#!/bin/sh
+
+main()
+{
+
+	printf "The document is test01_20200519\n"
+}
+
+main
